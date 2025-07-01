@@ -59,4 +59,15 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    setTimeout(() => {
+      if (!window.appLoaded) {
+        document.body.innerHTML = '<h1>Memuat aplikasi...</h1><p>Halaman akan refresh otomatis</p>';
+        window.location.reload();
+      }
+    }, 5000);
+  </script>
+  
+  <script src="app.bundle.js" defer></script>
 </html>
