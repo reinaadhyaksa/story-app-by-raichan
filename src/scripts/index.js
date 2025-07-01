@@ -8,21 +8,33 @@ import Camera from './utils/camera';
 import { registerServiceWorker } from './utils';
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const app = new App({
-    content: document.getElementById('main-content'),
-    drawerButton: document.getElementById('drawer-button'),
-    drawerNavigation: document.getElementById('navigation-drawer'),
-    skipLinkButton: document.getElementById('skip-link'),
-  });
-  await app.renderPage();
+  try {
+    const mainContent = document.getElementById('main-content');
+    const drawerButton = document.getElementById('drawer-button');
+    const navigationDrawer = document.getElementById('navigation-drawer');
+    const skipLink = document.getElementById('skip-link');
 
-  await registerServiceWorker();
+    if (!mainContent || !drawerButton || !navigationDrawer || !skipLink) {
+      throw new Error('Elemen penting tidak ditemukan di DOM');
+    }
 
-  console.log('Berhasil mendaftarkan service worker.');
+    const app = new App({
+      content: mainContent,
+      drawerButton,
+      drawerNavigation: navigationDrawer,
+      skipLinkButton: skipLink
+    });
 
-  window.addEventListener('hashchange', async () => {
     await app.renderPage();
+    await registerServiceWorker();
 
-    Camera.stopAllStreams();
-  });
+    window.addEventListener('hashchange', async () => {
+      await app.renderPage();
+      Camera.stopAllStreams();
+    });
+
+  } catch (error) {
+    console.error('Aplikasi gagal dimuat:', error);
+    document.body.innerHTML = '<h1>Terjadi Error</h1><p>Silakan refresh halaman</p>';
+  }
 });
