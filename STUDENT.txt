@@ -1,0 +1,6 @@
+url: 
+name: raichan machrus adhyaksa
+email: reiadhyaksa@gmail.com
+map: L1V7oYaAoswTHnKhMMJ8
+vapid: BCCs2eonMI-6H2ctvFaWg-UYdDv387Vno_bzUzALpB442r2lCnsHmtrx8biyPi_E-1fSGABK_Qs_GlvPoJJqxbk 
+endpoint: https://story-api.dicoding.dev/v1/

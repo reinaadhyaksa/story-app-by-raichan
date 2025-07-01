@@ -1,0 +1,102 @@
+{
+    "id": "/#/",
+    "start_url": "/#/",
+    "scope": "/",
+    "name": "story-app",
+    "short_name": "story-app",
+    "description": "Aplikasi pelaporan kerusakan fasilitas umum yang memungkinkan warga Indonesia melaporkan masalah secara langsung kepada pemerintah kota. Dengan aplikasi ini, komunikasi antara warga dan pemerintah menjadi lebih efisien dalam menangani dan menindaklanjuti laporan kerusakan fasilitas umum.",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#d97706",
+    "icons": [
+        {
+            "src": "images/icons/icon-x144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any"
+        },
+        {
+            "src": "images/icons/maskable-icon-x48.png",
+            "type": "image/png",
+            "sizes": "48x48",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/icons/maskable-icon-x96.png",
+            "type": "image/png",
+            "sizes": "96x96",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/icons/maskable-icon-x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/icons/maskable-icon-x384.png",
+            "type": "image/png",
+            "sizes": "384x384",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/icons/maskable-icon-x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "images/screenshots/001.png",
+            "sizes": "1920x1043",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "images/screenshots/002.png",
+            "sizes": "1920x1043",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "images/screenshots/003.png",
+            "sizes": "1920x1043",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "images/screenshots/004.jpg",
+            "sizes": "1080x2280",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "images/screenshots/005.jpg",
+            "sizes": "1080x2280",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "images/screenshots/006.jpg",
+            "sizes": "1080x2280",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Cerita Baru",
+            "short_name": "Baru",
+            "description": "Membuat Cerita Baru",
+            "url": "/?source=pwa#/new",
+            "icons": [
+                {
+                    "src": "images/icons/add-x512.png",
+                    "type": "image/png",
+                    "sizes": "512x512"
+                }
+            ]
+        }
+    ]
+}
